@@ -1,7 +1,7 @@
 const express = require('express');
 const moment = require('moment');
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 1337;
 const server = app.listen(PORT, () => {
     console.log(`Listing in port ${server.address().port}`);
 });
